@@ -53,7 +53,7 @@ C={
 'gr-density':('density_natural_20261016.jpg',(42,363,1497,702)),
 'gr-next':('image38.jpg',(720,622,1476,832)),
 # proposal
-'pr-roads-hero':('roads_comparison_approved_20261016.png',(800,40,1070,248)),
+'pr-roads-hero':('roads_comparison_approved_20261016.png',(803,53,1067,256)),
 'pr-roads-l':('roads_comparison_approved_20261016.png',(40,362,515,553)),'pr-roads-r':('roads_comparison_approved_20261016.png',(557,362,1031,553)),
 'pr-roads-illus':('roads_comparison_approved_20261016.png',(40,1185,280,1262)),
 'pr-water-hero':('image1.png',(790,68,1536,290)),'pr-water-illus':('image1.png',(48,812,282,898)),
