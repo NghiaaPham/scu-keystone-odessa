@@ -57,10 +57,10 @@ main:focus{outline:none}
 .main-nav .nav-cta-m,.menu-btn{display:none}
 .menu-btn{align-items:center;gap:8px;margin-left:auto;background:#fff;border:1.5px solid var(--navy);color:var(--navy);border-radius:10px;padding:8px 12px;font:600 15px var(--sans);cursor:pointer}
 .menu-btn .i{width:20px;height:20px}
-@media (max-width:1100px){
+@media (max-width:1240px){
   .bar{gap:14px}.main-nav a{padding:10px 8px;font-size:15px}
 }
-@media (max-width:960px){
+@media (max-width:1100px){
   :root{--hh:62px}
   .logo{font-size:19px}.logo span:last-child{font-size:19px}
   .bar .header-cta{display:none}

@@ -79,3 +79,4 @@
 @media (max-width:1100px){.icards{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.issues-head{grid-template-columns:1fr}}
 @media (max-width:560px){.icards{grid-template-columns:1fr}}
+@media (max-width:900px){.tiles{grid-template-columns:1fr}}
