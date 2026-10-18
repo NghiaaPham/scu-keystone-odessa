@@ -1,0 +1,5 @@
+[
+ {"img":"ac-st1.jpg","alt":"Children walking on the shoulder of a local road.","tone":"coral","icon":"car","label":"Road Safety","quote":"Traffic has increased significantly, and it feels less safe for our children to walk or bike in our neighborhood.","name":"Keystone–Odessa Resident","date":"September 2026"},
+ {"img":"ac-st2.jpg","alt":"A glass of well water at a kitchen tap.","tone":"teal","icon":"drop","label":"Water & Septic","quote":"Our well water often has a strange taste and odor. We are concerned about our long-term health and the lack of options for public water.","name":"Odessa Resident","date":"August 2026"},
+ {"img":"ac-st3.jpg","alt":"An older resident driving on a long rural road.","tone":"amber","icon":"cart","label":"Everyday Access","quote":"We have to drive a long way for groceries, healthcare, and other essential services. It makes daily life more difficult, especially for older residents.","name":"Keystone Resident","date":"September 2026"}
+]
