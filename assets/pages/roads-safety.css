@@ -1,0 +1,5 @@
+/* Roads & Safety — page-specific tweaks (shared components in detail.css) */
+.gunn-top{grid-template-columns:1.3fr 1fr}
+.gunn-photo{aspect-ratio:799/280;margin-top:14px}
+.gunn-map{aspect-ratio:598/518}
+@media (max-width:1000px){.gunn-top{grid-template-columns:1fr}}

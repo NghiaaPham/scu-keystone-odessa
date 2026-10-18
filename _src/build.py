@@ -134,6 +134,7 @@ def render(path):
     m = re.match(r'\s*<!--meta (.*?)-->\s*', raw, re.S)
     meta = json.loads(m.group(1)); body = raw[m.end():]
     body = re.sub(r'\{\{icon:([a-z-]+)(?::([a-z0-9- ]+))?\}\}', lambda mm: icon(mm.group(1), 'i ' + (mm.group(2) or '')).replace('"i "', '"i"'), body)
+    body = re.sub(r'\{\{tabs:([a-z]+):([^:}]+):([^}]+)\}\}', lambda mm: tabs(mm.group(1), mm.group(2), mm.group(3)), body)
     body = re.sub(r'\{\{include:([a-z0-9_-]+)\}\}', lambda mm: include(mm.group(1)), body)
     css = ''.join(f'<link rel="stylesheet" href="assets/pages/{c}.css">' for c in meta.get('css', []))
     js = ''.join(f'<script src="assets/pages/{j}.js" defer></script>' for j in meta.get('js', []))
@@ -199,6 +200,24 @@ def r_stories(items):
     return '\n'.join(out)
 
 RENDERERS = {'library': r_library, 'stories': r_stories}
+
+# section navigation strips (bottom tab bars in the mockups)
+TABSETS = {
+ 'roads': [('#lighting','01','Street Lighting','streetlight','coral'),('#gunn','02','Gunn Highway','road','navy'),
+           ('#walking','03','Walking, Biking &amp; Crossings','walk','teal'),('#emergency','04','Emergency Access','siren','amber')],
+ 'water': [('#scale','01','Septic Concentration','database','teal'),('#repairs','02','Septic Repairs','wrench','coral'),
+           ('#connected','03','Connected System','waves','teal'),('#options','04','Water &amp; Wastewater Options','gear','navy'),
+           ('#conflict','05','The Core Conflict','scale','coral'),('#comparison','06','Plan Comparison','swap','teal')],
+ 'issues': [('roads-safety.html','01','Roads &amp; Safety','car','coral'),('water-septic.html','02','Water &amp; Septic','drop','teal'),
+            ('growth.html','03','Growth &amp; Daily Life','house','navy'),('issues.html#plan','04','The Community Plan','doc','green')],
+}
+def tabs(setname, active, label):
+    items = TABSETS[setname]; out = []
+    for href, num, name, ic, col in items:
+        cur = ' aria-current="true"' if num == active or href == active else ''
+        out.append(f'<li><a href="{href}"{cur}><span class="ic sm {col}">{icon(ic)}</span><span><span class="num">{num}</span><span class="nm">{name}</span></span><span class="go">{icon("arrow")}</span></a></li>')
+    return f'<nav aria-label="{label}"><ul class="tabs" style="--n:{len(items)}">' + ''.join(out) + '</ul></nav>'
+
 
 if __name__ == '__main__':
     for p in sorted(glob.glob(os.path.join(SRC, 'pages', '*.html'))):
