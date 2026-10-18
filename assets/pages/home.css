@@ -64,8 +64,7 @@
 .issues-head{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:end;margin-bottom:30px}
 .issues-intro{color:#2B4257;margin:0 0 10px}
 .icards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.icard{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--navy);box-shadow:var(--shadow);transition:transform .15s}
-.icard:hover{transform:translateY(-3px)}
+.icard{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--navy);box-shadow:var(--shadow)}
 .icard .ph{display:block;aspect-ratio:353/145;overflow:hidden}
 .icard .ph img{width:100%;height:100%;object-fit:cover}
 .icard{container-type:inline-size}

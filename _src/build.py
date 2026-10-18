@@ -138,6 +138,8 @@ def render(path):
     body = re.sub(r'\{\{include:([a-z0-9_-]+)\}\}', lambda mm: include(mm.group(1)), body)
     css = ''.join(f'<link rel="stylesheet" href="assets/pages/{c}.css">' for c in meta.get('css', []))
     js = ''.join(f'<script src="assets/pages/{j}.js" defer></script>' for j in meta.get('js', []))
+    # home uses the Oswald display face above the fold: preload it so a late font swap cannot shift text
+    pre = '\n<link rel="preload" href="assets/fonts/oswald-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>' if 'home' in meta.get('css', []) else ''
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -147,7 +149,8 @@ def render(path):
 <title>{meta['title']}</title>
 <meta name="description" content="{html.escape(meta.get('desc',''))}">
 <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>{pre}
+<script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="assets/site.css">{css}
 <script src="assets/site.js" defer></script>{js}
 </head>

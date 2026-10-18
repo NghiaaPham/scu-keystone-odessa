@@ -147,8 +147,8 @@ fieldset.checks legend{font-weight:600;font-size:.9rem;color:var(--navy);margin-
 .sample-k{display:block;font:600 .74rem/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
 .src-link{display:inline-flex;align-items:center;min-height:32px;font-size:.9rem;font-weight:600;color:var(--teal);margin-top:4px}
 .src-tba{display:inline-block;font-size:.88rem;color:var(--muted);margin-top:6px}
-.figure-row{scroll-margin-top:calc(var(--header-h) + 24px)}
-.table tr[id]{scroll-margin-top:calc(var(--header-h) + 24px)}
+.figure-row{scroll-margin-top:12px} /* header offset comes from html scroll-padding-top */
+.table tr[id]{scroll-margin-top:12px}
 .figure-row:target{background:var(--teal-10);box-shadow:-16px 0 0 var(--teal-10),16px 0 0 var(--teal-10)}
 .tag{font-size:.74rem}
 @media (max-width:640px){.small,.source,.form .fine,.illus{font-size:.94rem}.table-wrap.stack td{grid-template-columns:92px minmax(0,1fr)}}
