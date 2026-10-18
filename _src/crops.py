@@ -44,7 +44,7 @@ C={
 'wt-e1':('image15.jpg',(40,266,305,370)),'wt-e2':('image15.jpg',(322,266,589,370)),'wt-e3':('image15.jpg',(603,266,873,370)),'wt-e4':('image15.jpg',(887,266,1156,370)),'wt-e5':('image15.jpg',(1171,266,1436,370)),
 'wt-next':('image15.jpg',(820,715,1476,984)),
 # growth
-'gr-then':('image18.jpg',(0,272,737,683)),'gr-today':('image18.jpg',(742,272,1476,683)),
+'gr-then':('image18.jpg',(0,272,700,683)),'gr-today':('image18.jpg',(776,272,1476,683)),  # inset past the baked centre arrow
 'gr-services-map':('image20.jpg',(320,306,1140,806)),
 'gr-s1':('image20.jpg',(1354,389,1453,440)),'gr-s2':('image20.jpg',(1354,444,1453,494)),'gr-s3':('image20.jpg',(1354,499,1453,549)),'gr-s4':('image20.jpg',(1354,554,1453,604)),'gr-s5':('image20.jpg',(1354,609,1453,659)),
 'gr-cmp-l':('image12.jpg',(0,286,270,738)),'gr-cmp-r':('image12.jpg',(1206,286,1476,738)),

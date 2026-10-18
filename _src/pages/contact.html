@@ -5,6 +5,7 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="action.html">Take Action</a> / Contact</nav>
     <span class="eyebrow teal">Contact</span>
+    <p class="demo-note">{{icon:info}}Preview page: this content is not yet supplied in the blueprint and is a placeholder for review.</p>
     <h1>Get in touch</h1>
     <p class="lede">Questions about the proposal, a correction to something on this site, an accessibility barrier or a privacy request — send it here and we’ll reply.</p>
   </div>
@@ -15,21 +16,22 @@
     <div class="split rev" style="align-items:start">
       <div>
         <h2 class="h3" style="margin-bottom:22px">Send a message</h2>
-        <form class="form" novalidate id="contact-form" data-proto="Demo only. Nothing is submitted or saved.">
+        <form class="form" novalidate id="contact-form" data-proto="Demo only. Nothing is submitted or saved." onsubmit="return false">
+          <p class="demo-note">{{icon:info}}Demo only. Nothing is submitted or saved.</p>
           <div class="form-grid">
             <div class="field">
               <label for="c-name">Name <span class="req" aria-hidden="true">*</span></label>
-              <input id="c-name" name="name" type="text" autocomplete="name" required data-err="Enter your name.">
+              <input id="c-name" data-name="name" type="text" autocomplete="name" required data-err="Enter your name." readonly>
             </div>
             <div class="field">
               <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
-              <input id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="c-email-h">
+              <input id="c-email" data-name="email" type="email" autocomplete="email" required aria-describedby="c-email-h" readonly>
               <p class="hint" id="c-email-h">So we can reply. Not added to any mailing list.</p>
             </div>
           </div>
           <div class="field">
             <label for="c-topic">Topic <span class="req" aria-hidden="true">*</span></label>
-            <select id="c-topic" name="topic" required data-err="Choose a topic.">
+            <select disabled id="c-topic" data-name="topic" required data-err="Choose a topic.">
               <option value="">Choose a topic</option>
               <option value="general">General question</option>
               <option value="correction">Correction to something on this site</option>
@@ -40,16 +42,16 @@
           </div>
           <div class="field">
             <label for="c-page">Page or link <span class="small">(optional)</span></label>
-            <input id="c-page" name="page" type="text" placeholder="e.g. Roads &amp; Safety, the traffic figure">
+            <input id="c-page" data-name="page" type="text" placeholder="e.g. Roads &amp; Safety, the traffic figure" readonly>
           </div>
           <div class="field">
             <label for="c-msg">Message <span class="req" aria-hidden="true">*</span></label>
-            <textarea id="c-msg" name="message" rows="6" required data-err="Write your message." aria-describedby="c-msg-h"></textarea>
+            <textarea readonly id="c-msg" data-name="message" rows="6" required data-err="Write your message." aria-describedby="c-msg-h"></textarea>
             <p class="hint" id="c-msg-h">Please don't include other people's personal details without their permission.</p>
           </div>
-          <label class="check"><input type="checkbox" id="c-consent" name="consent_reply" required data-label="Permission to reply" data-err="Check the box so we can use your details to reply."> <span>I agree that Safer Communities United may use these details to reply to this message. <span class="req" aria-hidden="true">*</span></span></label>
+          <label class="check"><input type="checkbox" onclick="return false" id="c-consent" data-name="consent_reply" required data-label="Permission to reply" data-err="Check the box so we can use your details to reply."> <span>I agree that Safer Communities United may use these details to reply to this message. <span class="req" aria-hidden="true">*</span></span></label>
           <p class="fine">Your message is not a petition signature and does not join you to the supporter network. See the draft <a href="privacy.html">privacy notice</a>.</p>
-          <div><button class="btn btn-submit" type="submit">Send message →</button></div>
+          <div><button class="btn btn-submit" type="button" data-demo="Sending messages is not available in this demo. No message or personal information is collected, stored or sent.">Send message →</button></div>
         </form>
       </div>
 
@@ -67,7 +69,7 @@
         <ul class="list" style="padding-left:1.1em;font-size:.95rem">
           <li><a href="edits.html">Corrections and changes we have made</a></li>
           <li><a href="accessibility.html">Reporting an accessibility barrier</a></li>
-          <li><a href="action.html#story">Share your story about roads, water or daily life</a></li>
+          <li><a href="action.html#share-story">Share your story about roads, water or daily life</a></li>
           <li><a href="sources-methods.html">Where our figures come from</a></li>
         </ul>
       </aside>

@@ -20,3 +20,16 @@ fieldset.has-error{border-left:3px solid #A8433A;padding-left:14px}
 /* fallback summary (forms.js) */
 .error-summary .es-h{font:600 1.15rem/1.3 var(--serif);color:var(--navy);margin:0 0 8px}
 .error-summary{scroll-margin-top:60px}
+/* demo previews: fields are non-editable examples (blueprint: nothing is submitted or saved) */
+.form [readonly],.form select:disabled{background:#fff;color:inherit;opacity:1;cursor:default}
+.form input[type=checkbox][onclick]{cursor:default}
+/* base layout for the Contact / Updates demo forms (these rules were missing, leaving the fields unstyled) */
+.form{display:grid;gap:18px;max-width:720px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-weight:600;color:var(--navy)}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1px solid #7D8B96;border-radius:8px;font:inherit;font-size:16px;color:var(--navy);background:#fff}
+.form .hint{font-size:.88rem;color:var(--muted);margin:0}
+.form .check{display:flex;gap:10px}
+.form .btn-submit{justify-self:start}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}

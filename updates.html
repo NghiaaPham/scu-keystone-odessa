@@ -27,6 +27,7 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="action.html">Take Action</a> / Updates</nav>
     <span class="eyebrow teal">Updates</span>
+    <p class="demo-note"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>Preview page: this content is not yet supplied in the blueprint and is a placeholder for review.</p>
     <h1>What's new from Safer Communities United</h1>
     <p class="lede">New evidence, petition news and upcoming public meetings, in date order. Each update links to the page or record it concerns.</p>
   </div>
@@ -73,23 +74,24 @@
         <span class="eyebrow teal">Email updates</span>
         <h2 id="sub-h" class="h3">Get updates by email</h2>
         <p class="small">Occasional news only: new evidence, petition milestones and public meetings. You can unsubscribe at any time.</p>
-        <form class="form" novalidate data-proto="Demo only. Nothing is submitted or saved.">
+        <form class="form" novalidate data-proto="Demo only. Nothing is submitted or saved." onsubmit="return false">
+          <p class="demo-note"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>Demo only. Nothing is submitted or saved.</p>
           <div class="field">
             <label for="u-email">Email <span class="req" aria-hidden="true">*</span></label>
-            <input id="u-email" name="email" type="email" autocomplete="email" required aria-describedby="u-email-h">
+            <input id="u-email" data-name="email" type="email" autocomplete="email" required aria-describedby="u-email-h" readonly>
             <p class="hint" id="u-email-h">Used only to send these updates.</p>
           </div>
           <div class="field">
             <label for="u-name">First name <span class="small">(optional)</span></label>
-            <input id="u-name" name="first_name" type="text" autocomplete="given-name">
+            <input id="u-name" data-name="first_name" type="text" autocomplete="given-name" readonly>
           </div>
           <div class="field">
             <label for="u-zip">Community or ZIP <span class="small">(optional)</span></label>
-            <input id="u-zip" name="community" type="text" autocomplete="postal-code" inputmode="text">
+            <input id="u-zip" data-name="community" type="text" autocomplete="postal-code" inputmode="text" readonly>
           </div>
-          <label class="check"><input type="checkbox" id="u-consent" name="consent_updates" required data-label="Email updates consent" data-err="Check the box to agree to receive email updates."> <span>Email me campaign updates. I can unsubscribe. <span class="req" aria-hidden="true">*</span></span></label>
+          <label class="check"><input type="checkbox" onclick="return false" id="u-consent" data-name="consent_updates" required data-label="Email updates consent" data-err="Check the box to agree to receive email updates."> <span>Email me campaign updates. I can unsubscribe. <span class="req" aria-hidden="true">*</span></span></label>
           <p class="fine">This is separate from the supporter network and the petition: subscribing does not sign the petition or join the network. See the draft <a href="privacy.html">privacy notice</a>.</p>
-          <button class="btn btn-submit" type="submit">Subscribe →</button>
+          <button class="btn btn-submit" type="button" data-demo="Subscribing is not available in this demo. No email address is collected, stored or sent.">Subscribe →</button>
         </form>
       </aside>
     </div>
@@ -99,7 +101,7 @@
 <section class="section tight end-cta">
   <div class="wrap cta-band">
     <div><h2 class="h3">Want to do more than follow along?</h2><p>Join the supporter network or share what you see on our roads and water.</p></div>
-    <a class="btn btn-secondary" href="action.html#actions">See ways to help →</a>
+    <a class="btn btn-secondary" href="action.html#three-ways">See ways to help →</a>
   </div>
 </section>
 </main>
