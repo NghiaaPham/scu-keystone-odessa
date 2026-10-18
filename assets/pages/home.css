@@ -69,7 +69,8 @@
 .icard .ph{display:block;aspect-ratio:353/145;overflow:hidden}
 .icard .ph img{width:100%;height:100%;object-fit:cover}
 .icard{container-type:inline-size}
-.icard>.ic{position:absolute;left:16px;top:calc(41.08cqi - 26px);width:56px;height:56px}
+.icard>.ic{position:absolute;left:2.6cqi;top:24cqi;width:21.6cqi;height:21.6cqi;border-width:4px}
+.icard>.ic .i{width:45%;height:45%}
 .icard .ib{display:flex;flex-direction:column;flex:1;padding:34px 20px 20px}
 .icard .it{font:700 23px/1.15 var(--serif);margin-bottom:10px}
 .icard .ix{font-size:15.5px;color:#2B4257;flex:1}

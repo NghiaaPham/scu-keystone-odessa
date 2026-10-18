@@ -50,9 +50,10 @@ C={
 'gr-cmp-l':('image12.jpg',(0,286,270,738)),'gr-cmp-r':('image12.jpg',(1206,286,1476,738)),
 'gr-e1':('image38.jpg',(310,270,498,425)),'gr-e2':('image38.jpg',(768,270,958,425)),'gr-e3':('image38.jpg',(1237,270,1444,425)),
 'gr-e4':('image38.jpg',(304,445,498,600)),'gr-e5':('image38.jpg',(768,445,958,600)),'gr-e6':('image38.jpg',(1243,445,1444,600)),
+'gr-density':('density_natural_20261016.jpg',(42,363,1497,702)),
 'gr-next':('image38.jpg',(720,622,1476,832)),
 # proposal
-'pr-roads-hero':('roads_comparison_approved_20261016.png',(800,40,1070,300)),
+'pr-roads-hero':('roads_comparison_approved_20261016.png',(800,40,1070,248)),
 'pr-roads-l':('roads_comparison_approved_20261016.png',(40,362,515,553)),'pr-roads-r':('roads_comparison_approved_20261016.png',(557,362,1031,553)),
 'pr-roads-illus':('roads_comparison_approved_20261016.png',(40,1185,280,1262)),
 'pr-water-hero':('image1.png',(790,68,1536,290)),'pr-water-illus':('image1.png',(48,812,282,898)),
@@ -68,7 +69,7 @@ C={
 'ac-c1':('image51.png',(66,371,517,607)),'ac-c2':('image51.png',(544,371,992,609)),'ac-c3':('image51.png',(1019,371,1477,607)),
 'ac-story-bg':('image48.png',(760,300,1012,903)),
 'ac-share':('image57.png',(745,100,1536,880)),
-'ac-st1':('image55.png',(58,310,523,522)),'ac-st2':('image55.png',(545,310,992,522)),'ac-st3':('image55.png',(1013,310,1480,522)),
+'ac-st1':('image55.png',(58,310,523,500)),'ac-st2':('image55.png',(545,310,992,500)),'ac-st3':('image55.png',(1013,310,1480,500)),
 'ac-hand':('image55.png',(1230,110,1510,290)),
 # petition
 'pt-side-l':('image43.png',(0,180,105,640)),'pt-side-r':('image43.png',(783,180,887,640)),
@@ -79,8 +80,7 @@ for k,(f,b) in C.items():
     im.save(os.path.join(O,k+'.jpg'),quality=86,optimize=True,progressive=True)
 # full maps / approved artwork (kept whole, original pixels)
 FULL={'map-official-fig3':'image34.png','map-area':'image27.png','map-roads':'image25.png',
- 'preview-map-1':'image28.png','preview-map-2':'image19.png','preview-map-3':'image17.png',
- 'density-natural':'density_natural_20261016.jpg'}
+ 'preview-map-1':'image28.png','preview-map-2':'image19.png','preview-map-3':'image17.png'}
 for k,f in FULL.items():
     im=Image.open(os.path.join(M,f)).convert('RGB'); im.save(os.path.join(O,k+'.jpg'),quality=90,optimize=True,progressive=True)
 print(len(C)+len(FULL))

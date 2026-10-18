@@ -191,7 +191,7 @@ def r_stories(items):
     out = []
     for it in items:
         out.append(f'''<article class="story-card t-{it['tone']}">
-  <img src="assets/img/{it['img']}" alt="{html.escape(it['alt'])}" width="465" height="212" loading="lazy">
+  <img src="assets/img/{it['img']}" alt="{html.escape(it['alt'])}" width="465" height="190" loading="lazy">
   <div class="sc-body"><p class="chip">{icon(it['icon'])}{html.escape(it['label'])}</p>
   <blockquote><p>“{html.escape(it['quote'])}”</p></blockquote>
   <p class="who">{icon('people')}<span><b>{html.escape(it['name'])}</b><br>{html.escape(it['date'])}</span></p>

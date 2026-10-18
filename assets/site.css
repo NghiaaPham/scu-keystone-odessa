@@ -36,6 +36,7 @@ b,strong{font-weight:700}
 .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .i{width:1em;height:1em;flex:none;vertical-align:-.15em}
 main{display:block}
+[hidden]{display:none!important}
 main:focus{outline:none}
 
 /* ---------- header ---------- */
@@ -62,7 +63,7 @@ main:focus{outline:none}
 @media (max-width:960px){
   :root{--hh:62px}
   .logo{font-size:19px}.logo span:last-child{font-size:19px}
-  .header-cta{display:none}
+  .bar .header-cta{display:none}
   .menu-btn{display:inline-flex}
   .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--gray);box-shadow:0 12px 24px rgba(23,50,77,.12);padding:8px 16px 16px;max-height:calc(100vh - var(--hh));overflow:auto}
   .main-nav.open{display:block}
@@ -108,6 +109,7 @@ button.link-arrow{display:inline}
 .h2{font-size:clamp(30px,3.6vw,46px)}
 .teal-t{color:var(--teal)}
 .coral-t{color:var(--coral)}
+.center{text-align:center}
 .small{font-size:14px;color:var(--muted)}
 .note{font-size:14px;line-height:1.55;color:var(--muted)}
 .note a{font-weight:600}
