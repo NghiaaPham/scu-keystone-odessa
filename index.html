@@ -5,289 +5,185 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Our Community — Safer Communities United</title>
-<meta name="description" content="Putting the health, safety, and welfare of people first. Safer Communities United shows how an outdated Community Plan affects roads, water, growth and daily life in Keystone–Odessa.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/pages/home.css">
+<meta name="description" content="Putting the health, safety, and welfare of people first.">
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/pages/home.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body data-page="home">
-<div id="site-header"></div>
-<main id="main">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-6h14l2 6v4H3z"/><path d="M6 17v2M18 17v2"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></symbol><symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></symbol><symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></symbol><symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8M9 9h3"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z"/></symbol><symbol id="i-streetlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V6a3 3 0 0 1 3-3h7"/><path d="M13 3h6l-1 3h-4z"/><path d="M3 22h6"/></symbol><symbol id="i-road" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 9 3M19 21 15 3M12 5v2M12 11v2M12 17v2"/></symbol><symbol id="i-walk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M9 21l2-6 3 3v3M7 12l3-4 4 1 2 4 3 1M11 15l-1-4"/></symbol><symbol id="i-bike" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-7h5l3 7M10 10 8 6H6M15 10l-2-4h2"/></symbol><symbol id="i-siren" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18v-6a5 5 0 0 1 10 0v6"/><path d="M5 21h14v-3H5zM12 2v2M4.2 5.2l1.4 1.4M19.8 5.2l-1.4 1.4"/></symbol><symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 3 5v16l6-2 6 2 6-2V3l-6 2z"/><path d="M9 3v16M15 5v16"/></symbol><symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></symbol><symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0 5 5l1.5-1.5a6 6 0 0 1-7.5 6L7 22.5 1.5 17 8 10.5a6 6 0 0 1 6-7.5z"/></symbol><symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M2 12c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M2 17c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 6-9 16-10-1 10-4 16-9 17z"/><path d="M4 21c4-6 8-9 12-11"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15v3M11 11v7M15 7v11M19 12v6"/></symbol><symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5M3 9v12h18V9M3 9h18M9 21v-6h6v6"/></symbol><symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h11l2-8H6.5"/></symbol><symbol id="i-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol><symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2"/><circle cx="17" cy="8" r="2.5"/><path d="M17 13a4 4 0 0 1 4 4v2"/></symbol><symbol id="i-fork" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v8a2 2 0 0 0 2 2v10M5 2v6M9 2v6M17 22V2c-2 1-3 4-3 8h3"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 13h18"/></symbol><symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></symbol><symbol id="i-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l9 5V5L6 10zM18 9a4 4 0 0 1 0 6M6 14l1 6h3l-1-5"/></symbol><symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></symbol><symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5zM2 12l10 5 10-5M2 17l10 5 10-5"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20"/><path d="M9 22v-4h6v4M8 6h2M14 6h2M8 10h2M14 10h2M8 14h2M14 14h2"/></symbol><symbol id="i-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 21h20z"/><path d="M12 10v5M12 18h.01"/></symbol><symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></symbol><symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></symbol><symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></symbol><symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol><symbol id="i-traffic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="20" rx="3"/><circle cx="12" cy="7" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="12" cy="17" r="1.4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></symbol><symbol id="i-rain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15a5 5 0 1 1 1-9.9A6 6 0 0 1 19 8a4 4 0 0 1 0 8H7M8 19l-1 2M12 19l-1 2M16 19l-1 2"/></symbol><symbol id="i-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6M4 20h16"/></symbol><symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></symbol><symbol id="i-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6M12 2 5 12h4l-3 4h12l-3-4h4z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5"/></symbol><symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol><symbol id="i-faucet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h11a4 4 0 0 1 4 4v1M8 9V5h4v4M5 5h10"/><path d="M18 17v1M18 20v1"/></symbol><symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22V3M5 3h12l-2 4 2 4H5"/></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol><symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="2"/><path d="M4 11h16M7 21v-3M17 21v-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></symbol><symbol id="i-pipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h8v8H3zM11 10h6a4 4 0 0 1 4 4v7M17 14v7"/></symbol><symbol id="i-well" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h14M7 10v11h10V10M4 10l8-6 8 6M12 14v3"/></symbol><symbol id="i-septic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8h8v3M2 20h20"/></symbol><symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16M16 4l4 4-4 4M20 16H4M8 12l-4 4 4 4"/></symbol></defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="logo" href="index.html" aria-label="Safer Communities United — home"><span>Safer</span><span>Communities United</span></a>
+  <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="index.html" aria-current="page">Our Community</a></li><li><a href="issues.html">Issues</a></li><li><a href="evidence.html">The Facts</a></li><li class="has-sub"><a href="proposal.html">The Proposal</a><ul class="sub"><li><a href="proposal.html#compare">Compare the Two Plans →</a></li></ul></li><li><a href="action.html">Take Action</a></li><li><a href="about.html">About</a></li></ul>
+    <a class="btn btn-primary nav-cta-m" href="action.html">Get Involved</a></nav>
+  <a class="btn btn-primary header-cta" href="action.html">Get Involved</a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg><span>Menu</span></button>
+</div></header>
+<main id="main" tabindex="-1">
+<!-- PAGE 01 · 2. INTRODUCTION (mockup image33) -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">A safer, stronger Keystone–Odessa</p>
+      <h1 id="hero-h">Putting the <span class="teal-t">health, safety,</span> and <span class="teal-t">welfare</span> of people first.</h1>
+      <p class="lede">We envision a future where community growth protects people and places—supported by responsible planning, safer infrastructure, environmental stewardship, and decisions that reflect the needs of today’s residents and generations to come.</p>
+      <div class="problem" role="note">
+        <span class="pi"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-warning"/></svg></span>
+        <p>The Keystone–Odessa community’s health, safety and welfare is endangered due to its <span class="coral-t">outdated community plan.</span></p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="issues.html">View the Issues →</a>
+        <a class="btn btn-secondary" href="evidence.html">View the Evidence →</a>
+      </div>
+    </div>
+    <div class="hero-photo"><img src="assets/img/home-hero.jpg" width="885" height="438" alt="A two-lane road lined with oaks passes a Keystone–Odessa community sign beside a lake."></div>
+  </div>
+</section>
 
-  <!-- 2. INTRODUCTION -->
-  <section class="home-intro" aria-labelledby="intro-h">
-    <div class="wrap grid-intro">
+<!-- PAGE 01 · 2A. MAP COMPARISON — AFTER THE INTRODUCTION (stacked, full-width static maps) -->
+<section class="maps" aria-labelledby="nimby-h">
+  <div class="wrap maps-in">
+    <div class="poster-head">
       <div>
-        <span class="eyebrow">A safer, stronger Keystone–Odessa</span>
-        <h1 id="intro-h">Putting the <em>health, safety,</em> and <em>welfare</em> of people first.</h1>
-        <p class="lede">We envision a future where community growth protects people and places—supported by responsible planning, safer infrastructure, environmental stewardship, and decisions that reflect the needs of today’s residents and generations to come.</p>
-        <div class="problem" role="note">
-          <span class="mark">The problem</span>
-          <p>The Keystone–Odessa community’s health, safety and welfare is endangered due to its <b>outdated community plan.</b></p>
-        </div>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="issues.html">View the Issues →</a>
-          <a class="btn btn-secondary" href="evidence.html">View the Evidence →</a>
-        </div>
+        <h2 id="nimby-h" class="poster">The NIMBY Map</h2>
+        <p class="poster-src"><span class="pbar" aria-hidden="true"></span>Source: Keystone–Odessa Community Plan</p>
       </div>
-      <figure class="intro-photo pf">
-        <div class="ph"><img src="assets/img/home-gunn-hwy-hero.jpg" width="1800" height="1050" alt="Traffic waiting at a signal on Gunn Highway beneath the Upper Tampa Bay Trail pedestrian bridge, under an overcast sky." fetchpriority="high"></div>
-        <figcaption><span>Gunn Highway at the Upper Tampa Bay Trail bridge — one of the corridors residents, commuters and school traffic share every day.</span><span class="cr">Photo · DanTD · <a href="https://commons.wikimedia.org/wiki/File:Upper_Tampa_Bay_Trail;_Gunn_Hwy_Bridge-1.JPG">CC BY-SA 3.0</a></span></figcaption>
-      </figure>
+      <img class="deco-trees" src="assets/img/home-trees.jpg" alt="" width="139" height="140">
     </div>
-  </section>
+    <figure class="map-fig">
+      <a href="assets/img/map-official-fig3.jpg" class="map-open"><img src="assets/img/map-official-fig3.jpg" width="1544" height="1621" loading="lazy" alt="Official Figure 3 Keystone-Odessa Community Plan Boundary Map, with original figure caption retained."></a>
+      <figcaption>Summary: the official County figure outlines the Keystone–Odessa Community Plan boundary with parcel lines and major roads. <a href="https://planhillsborough.org/wp-content/uploads/2025/12/LIVABLE-COMMUNITIES.pdf#page=17">View the official map — Figure 3, page 17</a></figcaption>
+    </figure>
 
-  <!-- 2A. MAP COMPARISON -->
-  <section class="maps section" aria-labelledby="map1-h">
-    <div class="wrap">
-      <div class="kicker"><span>Explore the area</span><span class="k2">Three maps · about 2 minutes</span><a class="skip-issues" href="#issues">or skip to the four key issues ↓</a></div>
+    <div class="vs-row" aria-hidden="true"><span></span><b>VS.</b><span></span></div>
 
-      <!-- Map 1: The NIMBY Map -->
-      <article class="map-block" aria-labelledby="map1-h">
-        <header class="map-head">
-          <div>
-            <span class="num">Map 1 of 3 · Official boundary</span>
-            <h2 id="map1-h">The NIMBY Map</h2>
-            <p class="plain-sub">The official Community Plan boundary map (County Figure 3).</p>
-          </div>
-          <p class="src">Source: Keystone–Odessa Community Plan</p>
-        </header>
-        <figure class="map-figure portrait">
-          <img class="map-img" src="assets/img/map-image34.jpg" width="1544" height="1621" loading="lazy"
-               alt="Official Figure 3, Keystone-Odessa Community Plan Boundary Map: a red dashed boundary encloses a large area of northwest Hillsborough County between the Pinellas and Pasco county lines, with roads such as Gunn Highway, Van Dyke Road, Tarpon Springs Road and Mobley Road, and denser suburban development to the south and east."
-               data-map-src="assets/img/map-image34.jpg" data-map-title="The NIMBY Map — Official Figure 3, Keystone-Odessa Community Plan Boundary Map" data-map-download="assets/img/map-image34.jpg">
-          <figcaption>Official Figure 3 Keystone-Odessa Community Plan Boundary Map, with original figure caption retained.</figcaption>
-          <div class="map-tools">
-            <button type="button" data-map-src="assets/img/map-image34.jpg" data-map-title="The NIMBY Map — Official Figure 3" data-map-download="assets/img/map-image34.jpg">Open full-size map</button>
-            <a class="dl" href="assets/img/map-image34.jpg" download>Download original</a>
-            <a class="link-arrow ext" href="https://planhillsborough.org/wp-content/uploads/2025/12/LIVABLE-COMMUNITIES.pdf" rel="noopener">View the official map — Figure 3, page 17</a>
-          </div>
-        </figure>
-        <details class="summary">
-          <summary>Read a text description of this map</summary>
-          <p>The official map shows one thing: the line the Community Plan draws around Keystone–Odessa, from the Pasco and Pinellas county lines south to Mobley Road and Hutchinson Road. Parcel lines and major roads are drawn in, but the map does not say what is on the land, how the land is protected, or how much traffic uses those roads.</p>
-        </details>
+    <h2 class="poster center">What the NIMBY Map <span class="teal-t">doesn’t show you</span></h2>
+    <p class="poster-sub">The land. The neighborhoods. The traffic.</p>
+    <p class="center small">Added detail: land protections, parcel sizes and traffic volumes.</p>
+    <figure class="map-fig">
+      <a href="assets/img/map-area.jpg" class="map-open"><img src="assets/img/map-area.jpg" width="2047" height="1351" loading="lazy" alt="SCU compiled area map showing official boundary, conservation and water layers, parcel patterns and residential parcel statistics."></a>
+      <figcaption>Summary: the same boundary with conservation land, lakes and water layers, parcel patterns and residential parcel statistics added.</figcaption>
+    </figure>
+
+    <div class="facts">
+      <div class="fact">
+        <h3 class="poster-s">Look at what’s already here.</h3>
+        <p>Existing homes, divided lots and major roads are part of Keystone–Odessa today. The map shows an established residential community alongside its natural landscape.</p>
+      </div>
+      <div class="fact">
+        <h3 class="poster-s">The Community Plan isn’t the only thing protecting nature.</h3>
+        <p class="hl">Over one-third of the Keystone–Odessa Community Plan area is mapped conservation land, lakes, reservoirs or ponds.</p>
+        <p>Public conservation lands and lakes are part of what makes this area special. Separate ownership and environmental protections also matter; removing the Community Plan would not automatically remove them.</p>
+        <p class="note">GIS measurement, 16 October 2026: 34.3% (8,025 of 23,387 acres); conservation land and mapped lakes/reservoirs/ponds clipped to the adopted Plan boundary, with overlaps counted once. Sources: <a href="https://gis.tpcmaps.org/arcgis/rest/services/pigi/pigiHC/MapServer/3">Plan Hillsborough</a>; <a href="https://www.fnai.org/publications/gis-data">FNAI (September 2026)</a>; <a href="https://maps.hillsboroughcounty.org/arcgis1a/rest/services/SDEMapServices/Environmental/FeatureServer/1">acquired ELAPP</a>; <a href="https://www45.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandUseLandCoverPost2014/MapServer/3">SWFWMD (2023)</a>.</p>
+      </div>
+    </div>
+
+    <p class="poster-band">Protect the landscape. <span class="teal-t">Question the plan.</span></p>
+
+    <div class="tiles">
+      <article class="tile">
+        <img src="assets/img/home-icon-trees.jpg" alt="" width="98" height="90">
+        <div><h3 class="poster-s">Protect nature. Protect people.</h3>
+        <p>Conservation lands, lakes and water-resource protections already exist here.</p></div>
       </article>
-
-      <div class="vs" aria-hidden="true"><span>VS.</span></div>
-
-      <!-- Map 2: What the NIMBY map doesn't show you -->
-      <article class="map-block" aria-labelledby="map2-h">
-        <header class="map-head">
-          <div>
-            <span class="num">Map 2 of 3 · Area map</span>
-            <h2 id="map2-h">What the NIMBY Map doesn’t show you</h2>
-            <p class="sub">The land. The neighborhoods. The traffic.</p>
-          </div>
-          <p class="src">Added detail: land protections, parcel sizes and traffic volumes.</p>
-        </header>
-        <figure class="map-figure">
-          <img class="map-img" src="assets/img/map-image27.jpg" width="2047" height="1351" loading="lazy"
-               alt="Safer Communities United area map of Keystone-Odessa. A purple line marks the official Community Plan boundary. Dark green areas show public conservation and water land, light green other wetlands and conservation, blue lakes such as Lake Keystone, gray improved residential parcels, and hatching for wellhead protection. A side panel reads 4,542 improved single-family parcels inside the plan, 2,249 under one acre."
-               data-map-src="assets/img/map-image27.jpg" data-map-title="What the NIMBY Map doesn’t show you — SCU area map" data-map-download="assets/img/map-image27.jpg">
-          <figcaption>SCU compiled area map showing official boundary, conservation and water layers, parcel patterns and residential parcel statistics.</figcaption>
-          <div class="map-tools">
-            <button type="button" data-map-src="assets/img/map-image27.jpg" data-map-title="What the NIMBY Map doesn’t show you — SCU area map" data-map-download="assets/img/map-image27.jpg">Open full-size map</button>
-            <a class="dl" href="assets/img/map-image27.jpg" download>Download original</a>
-            <a class="link-arrow ext" href="sources-methods.html#maps">How this map was made</a>
-          </div>
-        </figure>
-        <details class="summary">
-          <summary>Read a text description of this map</summary>
-          <p>Inside the same boundary, the area map adds what the official figure leaves out: public conservation land, wetlands, lakes and wellhead-protection areas, and the thousands of improved residential parcels that make up today’s neighborhoods.</p>
-        </details>
-
-        <div class="facts">
-          <div class="fact-row">
-            <h3>Look at what’s already here.</h3>
-            <div>
-              <p>Existing homes, divided lots and major roads are part of Keystone–Odessa today. The map shows an established residential community alongside its natural landscape.</p>
-            </div>
-          </div>
-
-          <div class="fact-row">
-            <h3>The Community Plan isn’t the only thing protecting nature.</h3>
-            <div>
-              <div class="figure-stat">
-                <span class="big">34.3%</span>
-                <span class="lbl">Over one-third of the Keystone–Odessa Community Plan area is mapped conservation land, lakes, reservoirs or ponds.</span>
-              </div>
-              <p>Public conservation lands and lakes are part of what makes this area special. Separate ownership and environmental protections also matter; removing the Community Plan would not automatically remove them.</p>
-              <p class="srcline">GIS measurement, 16 October 2026: 34.3% (8,025 of 23,387 acres); conservation land and mapped lakes/reservoirs/ponds clipped to the adopted Plan boundary, with overlaps counted once. Sources: Plan Hillsborough; FNAI (September 2026); acquired ELAPP; SWFWMD (2023). <a href="sources-methods.html#figures">How 34.3% was measured →</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pullline">
-          <p class="l1">Protect the landscape. Question the plan.</p>
-          <p class="l3">Conservation lands, lakes and water-resource protections already exist here. <a class="read-src" href="sources-methods.html#figures">Read the source</a></p>
-        </div>
-
-
-        <div class="icon-strip">
-          <div>
-            <svg viewBox="0 0 52 44" aria-hidden="true" fill="none" stroke="#28736D" stroke-width="2" stroke-linejoin="round"><path d="M14 4 5 20h5L3 32h22l-7-12h5z"/><path d="M14 32v8"/><path d="M36 10l-7 12h4l-6 10h18l-6-10h4z"/><path d="M36 32v8"/><path d="M2 41h48" stroke="#17324D"/></svg>
-            <strong>Protect nature. <span>Protect people.</span></strong>
-          </div>
-          <div>
-            <svg viewBox="0 0 52 44" aria-hidden="true" fill="none" stroke="#C55245" stroke-width="2" stroke-linejoin="round"><path d="M4 22 15 12l11 10v18H4z"/><path d="M12 40v-9h6v9"/><path d="M26 22 37 12l11 10v18H26"/><path d="M34 40v-9h6v9"/><path d="M2 41h48" stroke="#17324D"/></svg>
-            <strong>Thousands of homes. <span>Real infrastructure needs.</span></strong>
-          </div>
-        </div>
-        <div class="facts">
-          <div class="fact-row" id="parcels">
-            <h3>Thousands of homes. <span class="accent-teal">Real infrastructure needs.</span></h3>
-            <div>
-              <div class="stat-pair">
-                <div class="figure-stat stacked">
-                  <span class="big navy">4,542</span>
-                  <span class="lbl">improved single-family parcels identified by our parcel analysis</span>
-                </div>
-                <div class="figure-stat stacked">
-                  <span class="big">49.5%</span>
-                  <span class="lbl">smaller than one acre (2,249 of 4,542)</span>
-                </div>
-              </div>
-              <p>Our parcel analysis identified 4,542 improved single-family parcels. Nearly half were smaller than one acre. Infrastructure decisions must reflect the community already here.</p>
-              <p class="srcline">SCU analysis of the October 2, 2026 County GIS snapshot: 2,249 of 4,542 selected improved single-family parcels had reported acreage below one acre (49.5%). Parcels are not a count of occupied homes. Public holdings, wetlands and water-protection layers describe different protections; they are not all government-owned land.</p>
-              <a class="read-src" href="https://www.hcpafl.org/Downloads/Maps-Data" rel="noopener">Parcel source and calculation inputs — County parcel GIS</a>
-              <a class="read-src" href="https://gis.tpcmaps.org/arcgis/rest/services/pigi/pigiHC/MapServer/3" rel="noopener">Official Community Plan boundary — County GIS</a>
-              <details class="method">
-                <summary>How the parcels were counted</summary>
-                <ul>
-                  <li>Unique tax folios assigned to the official boundary by an interior point.</li>
-                  <li>Single-family classification, positive building value and at least one recorded building.</li>
-                  <li>Full reported parcel acreage.</li>
-                </ul>
-                <p>The October 2 snapshot is dated, not a live count.</p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Map 3: Roads -->
-      <article class="map-block" aria-labelledby="map3-h">
-        <header class="map-head">
-          <div>
-            <span class="num">Map 3 of 3 · Roads &amp; traffic</span>
-            <h2 id="map3-h">Major roads. Everyone’s safety matters.</h2>
-          </div>
-          <p class="src"><b>Source</b>SCU map compiled from County road and traffic data</p>
-        </header>
-        <figure class="map-figure">
-          <img class="map-img" src="assets/img/map-image25.jpg" width="2046" height="1432" loading="lazy"
-               alt="Safer Communities United roads and traffic map of Keystone-Odessa. Main roads are drawn in red with blue letters A to AA marking traffic sections, including Gunn Highway, Tarpon Springs Road, Van Dyke Road, Lutz Lake Fern Road, Race Track Road and the Suncoast Parkway. A side table lists 2024 daily vehicles and level of service for each section; section A, Gunn Highway, shows 19,912."
-               data-map-src="assets/img/map-image25.jpg" data-map-title="Major roads — SCU roads and traffic map" data-map-download="assets/img/map-image25.jpg">
-          <figcaption>SCU roads and traffic map with original section labels A to AA, roads, legend and 2024 traffic table preserved.</figcaption>
-          <div class="map-tools">
-            <button type="button" data-map-src="assets/img/map-image25.jpg" data-map-title="Major roads — SCU roads and traffic map" data-map-download="assets/img/map-image25.jpg">Open full-size map</button>
-            <a class="dl" href="assets/img/map-image25.jpg" download>Download original</a>
-          </div>
-        </figure>
-        <details class="summary">
-          <summary>Read a text description of this map</summary>
-          <p>The roads map marks the main and busiest roads in and around the Plan area, lettered A to AA, with each section’s 2024 daily traffic and level of service in the table beside it. Gunn Highway, Van Dyke Road, the Suncoast Parkway and Race Track Road carry the heaviest volumes.</p>
-        </details>
-
-        <div class="facts">
-          <div class="fact-row solo">
-            <div>
-              <div class="figure-stat">
-                <span class="big navy">19,912</span>
-                <span class="lbl">2024 annual-average daily traffic on Gunn Highway, Pasco County line to Van Dyke Road.</span>
-              </div>
-              <p>One Gunn Highway section carries nearly 20,000 vehicle movements a day. People living here and traveling through deserve better options.</p>
-              <p class="srcline">This measures vehicle movements, not unique people or injuries. SCU map compiled from County road and traffic data. <a href="https://planhillsborough.org/traffic-counts" rel="noopener">Read the County’s 2024 traffic data</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="next-note">
-          <p><b>Continue to Roads &amp; Safety:</b> see why the Van Dyke study excluded Gunn Highway to west of Suncoast Parkway from capacity-improvement analysis because of Comprehensive Plan constraints.</p>
-          <div class="links">
-            <a class="link-arrow" href="roads-safety.html">Continue to Roads &amp; Safety</a>
-            <a class="read-src" href="https://planhillsborough.org/wp-content/uploads/2025/06/LRC-June-Draft-Agenda-Packet.pdf#page=13" rel="noopener">Read the Van Dyke study scope — page 13</a>
-          </div>
-        </div>
+      <article class="tile">
+        <img src="assets/img/home-icon-homes.jpg" alt="" width="90" height="67">
+        <div><h3 class="poster-s">Thousands of homes. Real infrastructure needs.</h3>
+        <p>Our parcel analysis identified 4,542 improved single-family parcels. Nearly half were smaller than one acre. Infrastructure decisions must reflect the community already here.</p>
+        <p class="note">SCU analysis of the October 2, 2026 County GIS snapshot: 2,249 of 4,542 selected improved single-family parcels had reported acreage below one acre (49.5%). Parcels are not a count of occupied homes. Public holdings, wetlands and water-protection layers describe different protections; they are not all government-owned land.</p>
+        <p class="note">Method: unique tax folios assigned to the official boundary by an interior point; single-family classification, positive building value and at least one recorded building; full reported parcel acreage. The October 2 snapshot is dated, not a live count.</p>
+        <!-- FUTURE (purple in blueprint): make the methodology note expandable. -->
+        <p class="note"><a href="https://maps.hillsboroughcounty.org/arcgis1a/rest/services/SDEMapServices/ParcelPublishing/FeatureServer/12">Parcel source and calculation inputs — County parcel GIS</a><br><a href="https://maps.hillsboroughcounty.org/arcgisapp/rest/services/DSD_Viewer/Landuse_and_Planning/MapServer/2">Official Community Plan boundary — County GIS</a></p></div>
       </article>
     </div>
-  </section>
 
-  <!-- KEEP THE LANDSCAPE -->
-  <section class="keep" aria-labelledby="keep-h">
-    <div class="wrap keep-grid">
+    <h2 class="poster center roads-h">Major roads. <span class="teal-t">Everyone’s safety matters.</span></h2>
+    <figure class="map-fig">
+      <a href="assets/img/map-roads.jpg" class="map-open"><img src="assets/img/map-roads.jpg" width="2046" height="1432" loading="lazy" alt="SCU roads and traffic map with original section labels A to AA, roads, legend and 2024 traffic table preserved."></a>
+      <figcaption>Summary: major roads in and around the Plan area, labelled by section A to AA, with the County’s 2024 traffic volumes in the table.</figcaption>
+    </figure>
+    <div class="roads-copy">
+      <p class="hl">One Gunn Highway section carries nearly 20,000 vehicle movements a day. People living here and traveling through deserve better options.</p>
+      <p class="note">2024 annual-average daily traffic: 19,912 on Gunn Highway, Pasco County line to Van Dyke Road. This measures vehicle movements, not unique people or injuries. SCU map compiled from County road and traffic data. <a href="https://services.arcgis.com/apTfC6SUmnNfnxuF/arcgis/rest/services/LOS_Update_2024/FeatureServer/6">Read the County’s 2024 traffic data</a></p>
+      <p><a href="roads-safety.html">Continue to Roads &amp; Safety</a>: see why the Van Dyke study excluded Gunn Highway to west of Suncoast Parkway from capacity-improvement analysis because of Comprehensive Plan constraints.</p>
+      <p class="note"><a href="https://planhillsborough.org/wp-content/uploads/2025/06/LRC-June-Draft-Agenda-Packet.pdf#page=13">Read the Van Dyke study scope — page 13</a></p>
+    </div>
+  </div>
+
+  <div class="keep">
+    <img class="forest l" src="assets/img/home-forest.jpg" alt="" width="170" height="192">
+    <img class="forest r" src="assets/img/home-forest.jpg" alt="" width="170" height="192">
+    <div class="wrap keep-in">
+      <h2 class="poster">Keep the landscape.</h2>
+      <div class="btn-row center-row">
+        <a class="btn btn-primary btn-lg pill" href="evidence.html">Explore the evidence →</a>
+        <a class="keep-link" href="petition.html#petition-text">Read the petition →</a>
+      </div>
+      <p><a class="keep-link sm" href="action.html#supporter-application">Become a supporter →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 01 · 3. MAIN ISSUES (mockup image33) -->
+<section class="issues section bg-white" id="issues" aria-labelledby="issues-h">
+  <div class="wrap">
+    <div class="issues-head">
       <div>
-        <h2 id="keep-h">Keep the landscape.</h2>
-        <div class="acts">
-          <a class="btn btn-primary" href="evidence.html">Explore the evidence →</a>
-          <a class="plain" href="petition.html">Read and sign the petition →</a>
-          <a class="plain" href="action.html#support">Become a supporter →</a>
-        </div>
+        <p class="eyebrow bar">Our key issues</p>
+        <h2 id="issues-h" class="h2">Major problems under the current community plan</h2>
       </div>
-      <figure class="keep-photo pf">
-        <div class="ph"><img src="assets/img/issues-utbt-lutz-lake-fern.jpg" width="1800" height="1350" alt="The paved Upper Tampa Bay Trail curving past a picnic shelter and trail map under tall pines and oaks at Lutz-Lake Fern Road."></div>
-        <figcaption><span>Upper Tampa Bay Trail at Lutz-Lake Fern Road.</span><span class="cr">Photo · DanTD · <a href="https://commons.wikimedia.org/wiki/File:Upper_Tampa_Bay_Trail_@_Lutz-Lake_Fern_Road;_Picnic_Shelter_and_Map.jpg">CC BY-SA 4.0</a></span></figcaption>
-      </figure>
+      <p class="issues-intro">Click on each issue below to learn more about how these problems impact our community and why change is needed.</p>
     </div>
-  </section>
-
-  <!-- 3. MAIN ISSUES -->
-  <section class="section issues-home" id="issues" aria-labelledby="issues-h">
-    <div class="wrap">
-      <div class="section-head row">
-        <div>
-          <span class="eyebrow rule">Our key issues</span>
-          <h2 id="issues-h">Major problems under the current community plan</h2>
-        </div>
-        <p>Click on each issue below to learn more about how these problems impact our community and why change is needed.</p>
-      </div>
-      <div class="issue-layout">
-        <article class="lead-issue">
-          <a class="ph" href="roads-safety.html" tabindex="-1" aria-hidden="true"><img src="assets/img/roads-tarpon-springs-rd-at-gunn.jpg" width="1600" height="1200" alt=""></a>
-          <p class="cap"><span>Tarpon Springs Road approaching Gunn Highway.</span><span class="cr">Photo · NE2 · <a href="https://commons.wikimedia.org/wiki/File:Road_photo_from_July_6,_2003_223.jpg">CC0</a></span></p>
-          <span class="ix"><b>01</b> Roads &amp; Safety</span>
-          <h3><a href="roads-safety.html">Our roads are dangerous!</a></h3>
-          <p>Traffic, intersections, lighting, road safety and emergency access put residents, students and commuters at risk.</p>
-          <a class="link-arrow" href="roads-safety.html">View Roads &amp; Safety</a>
-        </article>
-        <div class="issue-rows">
-          <article class="issue-row">
-            <a class="thumb" href="water-septic.html" tabindex="-1" aria-hidden="true"><img src="assets/img/water-odessa-aerial-crop.jpg" width="1440" height="760" alt=""></a>
-            <div>
-              <span class="ix teal"><b>02</b> Water &amp; Septic</span>
-              <h3><a href="water-septic.html">Our water is at risk!</a></h3>
-              <p>1,626 known septic systems, 1,210 likely septic, and 806 repair records. Septic systems and wells threaten groundwater, drinking water, health and the environment.</p>
-              <a class="link-arrow" href="water-septic.html">View Water &amp; Septic</a>
-            </div>
-          </article>
-          <article class="issue-row">
-            <a class="thumb" href="growth.html" tabindex="-1" aria-hidden="true"><img src="assets/img/growth-odessa-sr54-aerial.jpg" width="1800" height="1013" alt=""></a>
-            <div>
-              <span class="ix"><b>03</b> Growth &amp; Daily Life</span>
-              <h3><a href="growth.html">Everyday needs are harder to access!</a></h3>
-              <p>Housing, commute time, healthcare, food, jobs and essential services are limited due to current restrictions.</p>
-              <a class="link-arrow" href="growth.html">View Growth &amp; Daily Life</a>
-            </div>
-          </article>
-          <article class="issue-row">
-            <a class="thumb doc" href="issues.html#community-plan" tabindex="-1" aria-hidden="true"><span class="d1">Community Plan</span><span class="d2">2001</span><span class="d3">→ Today</span></a>
-            <div>
-              <span class="ix navy"><b>04</b> Created in 2001 · Still shaping Keystone–Odessa today</span>
-              <h3><a href="issues.html#community-plan">The Community Plan is holding our community back!</a></h3>
-              <p>Outdated rules adopted in 2001 continue to limit solutions for our roads, water, infrastructure, housing, and essential services.</p>
-              <a class="link-arrow" href="issues.html#community-plan">View the Community Plan</a>
-            </div>
-          </article>
-        </div>
-      </div>
-      <p class="note issues-note">Septic figures are administrative records for ZIP 33556, not a count of systems within the Community Plan boundary.</p>
+    <div class="icards">
+      <a class="icard" href="roads-safety.html">
+        <span class="ph"><img src="assets/img/home-card-roads.jpg" width="353" height="145" alt="Cars on a tree-lined two-lane road in Keystone–Odessa."></span>
+        <span class="ic coral ring"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-car"/></svg></span>
+        <span class="ib"><span class="it">Our roads are dangerous!</span>
+        <span class="ix">Traffic, intersections, lighting, road safety and emergency access put residents, students and commuters at risk.</span>
+        <span class="go c-coral">View Roads &amp; Safety →</span></span>
+      </a>
+      <a class="icard" href="water-septic.html">
+        <span class="ph"><img src="assets/img/home-card-water.jpg" width="348" height="145" alt="A lake and wetland edge in Keystone–Odessa."></span>
+        <span class="ic teal ring"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-drop"/></svg></span>
+        <span class="ib"><span class="it">Our water is at risk!</span>
+        <span class="ix">1,626 known septic systems, 1,210 likely septic, and 806 repair records. Septic systems and wells threaten groundwater, drinking water, health and the environment.</span>
+        <span class="go c-teal">View Water &amp; Septic →</span></span>
+      </a>
+      <a class="icard" href="growth.html">
+        <span class="ph"><img src="assets/img/home-card-growth.jpg" width="333" height="145" alt="Homes and roads spread across a low-density area."></span>
+        <span class="ic navy ring"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-house"/></svg></span>
+        <span class="ib"><span class="it">Everyday needs are harder to access!</span>
+        <span class="ix">Housing, commute time, healthcare, food, jobs and essential services are limited due to current restrictions.</span>
+        <span class="go c-navy">View Growth &amp; Daily Life →</span></span>
+      </a>
+      <a class="icard" href="issues.html#plan">
+        <span class="ph"><img src="assets/img/home-card-plan.jpg" width="366" height="145" alt="Cover of the Keystone–Odessa Community Plan, adopted in 2001."></span>
+        <span class="ic green ring"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg></span>
+        <span class="ib"><span class="it">The Community Plan is holding our community back!</span>
+        <span class="ix">Outdated rules adopted in 2001 continue to limit solutions for our roads, water, infrastructure, housing, and essential services.</span>
+        <span class="go c-green">View the Community Plan →</span></span>
+      </a>
     </div>
-  </section>
-
+  </div>
+</section>
 </main>
-<div id="site-footer"></div>
-<script src="assets/site.js"></script>
+<footer class="site-footer"><div class="wrap">
+  <div class="f-brand"><p class="f-logo"><span>Safer</span><span>Communities United</span></p>
+    <p class="f-tag">Putting the health, safety, and welfare of people first.</p></div>
+  <nav class="f-cols" aria-label="Footer">
+    <div><h2>Explore</h2><ul><li><a href="index.html">Our Community</a></li><li><a href="issues.html">Issues</a></li><li><a href="evidence.html">The Facts</a></li><li><a href="proposal.html">The Proposal</a></li></ul></div>
+    <div><h2>Get Involved</h2><ul><li><a href="action.html">Take Action</a></li><li><a href="updates.html">Updates</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h2>Information</h2><ul><li><a href="about.html">About</a></li><li><a href="sources-methods.html">Sources &amp; Methods</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="edits.html">Edits</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+  </nav>
+</div>
+<div class="wrap f-base"><p>Review demo — not for public release. Forms are illustrative: nothing is submitted or saved.</p></div>
+</footer>
+<dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-dialog-title">
+  <div class="dd-in"><p class="dd-tag">Demo preview</p><h2 id="demo-dialog-title">Demo only. Nothing is submitted or saved.</h2>
+  <div class="dd-body" id="demo-dialog-body"></div>
+  <button type="button" class="btn btn-navy dd-close">Close</button></div>
+</dialog>
 </body>
 </html>
